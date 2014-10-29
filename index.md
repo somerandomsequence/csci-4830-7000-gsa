@@ -1,0 +1,4 @@
+---
+layout: default
+---
+* [Syllabus](/syllabus/)

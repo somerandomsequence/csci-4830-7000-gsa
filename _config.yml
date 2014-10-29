@@ -1,0 +1,8 @@
+# Site settings
+title: Geospatial Data Analysis
+email: caleb.phillips@colorado.edu
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://spatclass.smallwhitecube.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
