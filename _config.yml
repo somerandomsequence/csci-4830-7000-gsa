@@ -1,5 +1,5 @@
 # Site settings
-title: Geospatial Data Analysis
+title: Geospatial Data Analysis (CSCI 4830/7000)
 email: caleb.phillips@colorado.edu
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://spatclass.smallwhitecube.com" # the base hostname & protocol for your site

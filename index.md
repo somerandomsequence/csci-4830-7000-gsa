@@ -1,4 +1,3 @@
 ---
-layout: default
+layout: index
 ---
-* [Syllabus](/syllabus/)

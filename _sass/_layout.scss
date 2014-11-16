@@ -5,34 +5,38 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    background: #333;
+    color: white;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: white;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
 .site-nav {
     float: right;
     line-height: 56px;
-
+    
+ 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -82,6 +86,7 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            color: black;
         }
     }
 }
@@ -166,7 +171,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .post-list {
@@ -198,12 +203,12 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 26px;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 26px;
     }
 }
 
@@ -211,15 +216,15 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 20px;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 20px;
         }
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 16px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -227,7 +232,7 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 16px;
 
         @include media-query($on-laptop) {
             font-size: 18px;
