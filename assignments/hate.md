@@ -15,7 +15,7 @@ is a zipcode (ZCTA - "zip code tabulation area" in US Census parlance).
 
 ## Data
 
-Download the data: [hate.zip](http://gsa.smallwhitecube.com/a/hate.zip)
+Download the data: [hate.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqcWxPelJYYUxsT0E/view?usp=sharing) (51 MB)
 
  * splc2010.csv - SPLC Data
  * census2010.csv - Census Data
