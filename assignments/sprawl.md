@@ -5,7 +5,7 @@ permalink: /a/sprawl/
 menu: false
 ---
 
-In this assignment we will make use of imagery from the [Landsat 7](http://landsat.usgs.gov/about_landsat7.php) satellite to estimate the size of a urban area. Because Landsat 7 has been active since 1999, we will make use of 15 years of successive imagery to plot the growth of [urban sprawl](http://en.wikipedia.org/wiki/Urban_sprawl) in that time frame. We will focus on Dubai, a city in the UAE which has seen [massive growth in those 15 years](http://earthobservatory.nasa.gov/Features/WorldOfChange/dubai.php).
+In this assignment we will make use of imagery from the [Landsat 7](http://landsat.usgs.gov/about_landsat7.php) satellite to estimate the size of an urban area. Because Landsat 7 has been active since 1999, we can make use of 15 years of successive imagery to plot the growth of [urban sprawl](http://en.wikipedia.org/wiki/Urban_sprawl) in that time frame. We will focus on Dubai, a city in the UAE which has seen [massive growth in those 15 years](http://earthobservatory.nasa.gov/Features/WorldOfChange/dubai.php). We'll use a method of supervised maximum likelihood calculation to determine the extent of human created areas and analyze how those areas grow or change with time.
 
 ## Data
 
