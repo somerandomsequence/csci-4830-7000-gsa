@@ -19,6 +19,8 @@ If you're taking other CS courses, you may already have it. Once the VM is loade
 sudo apt-get update && sudo apt-get install cu-cs-csci-4830-geo -y
 ```
 
+Alternatively, if you use CSEL machines, this package will already be installed.
+
 ## Git
 
 You'll submit your work using the CSCI git server. Create an account here, if you don't have one already:
@@ -55,7 +57,7 @@ To submit them upstream to the git server so that I can see and grade them.
 
 ## Other Tools
 
-Whether you're using a CSEL machine (where tools should be pre-installed), the Virtual Machine, or your own computer, you should check to make sure the necessary pre-requisites are installed. Here's a list:
+Whether you're using a CSEL machine (where tools should be pre-installed), the Virtual Machine, or your own computer or custom VM, you should check to make sure the necessary pre-requisites are installed. Here's a list:
 
   * **GIS Stuff**
     * [QGIS](http://www.qgis.org/en/site/) >= 2.6
@@ -83,3 +85,5 @@ Whether you're using a CSEL machine (where tools should be pre-installed), the V
   * **Misc**
     * [Git](http://git-scm.com/) >= 1.9
       * Try: ```git --version```
+      
+Choosing to install everything yourself, on your own machine or VM is definitely an option, but it is at your own risk. If you run into difficulties (OSX can be a particular headache at times), you should punt to the consistent environment of the standard VM or CSEL machines.

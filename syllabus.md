@@ -47,17 +47,22 @@ to do ;)---caveat emptor).
 
 Access to a computer will be required for course assignments and projects. Programmatic tasks will be most approachable on a Unix or Unix-similar computer. The CS department has ample computing resources, particularly in the CSEL, which you are encouraged to make use of. If you are concerned about access to computing resources capable of completing the assignments, please let me know.
 
-
 #Grades
 
 Grading will be based upon attendance and participation, quality of execution on assignments, and
 final project outcomes. A detailed rubric will be developed throughout the course, but a general breakdown is as follows:
 
-  * Attendance: 20%
+  * Attendance: 10%
+  * Readings: 20%
   * Assignments: 30%
-  * Final Project: 50%
+  * Final Project: 40%
   
-Students who need a particular grade for their degree requirements are encouraged to inform the instructor so that extra-credit assignments might be assessed to bring a grade above threshold. Be aware that extra-credit work may be very complex or laborious :). Students who are auditing the course are similarly encourage to discuss goals with the instructor.
+Students who need a particular grade for their degree requirements are encouraged to inform the instructor so that extra-credit assignments might be assessed to bring a grade above threshold. There is absolutely no reason to get a grade below the one you desire. Note that that extra-credit work may be fairly complex or laborious as compared to the required course work. Because of that, I don't advise relying on extra-credit work to bolster your grade, unless needed, or you're simply interested in doing additional work. Students who are auditing the course are similarly encourage to discuss goals with the instructor.
+
+Additional notes: 
+
+  * In many cases grading will be done immediately at a deadline. Late work will not be graded. Missed/late work can be compensated for by doing extra credit assignments. 
+  * The attendance grade is not a participation grade. If you feel like being quiet (some days or every day), you will not be penalized for it. You are expected, however, to show up, ideally on time, and be present and listening.
 
 #Policies
 
