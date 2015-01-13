@@ -11,7 +11,7 @@ There are a number of GIS and analysis tools we'll use for this course. This ass
 
 You have the option of using a virtual machine based on Ubuntu. It can be downloaded here:
 
-[cu-cs-vm-spring15-xfce-x64-beta1.zip](https://csel-archive.cs.colorado.edu/vm-images/cu-cs-vm-spring15-xfce-x64-beta1.zip)
+[https://foundation.cs.colorado.edu/vm/](https://foundation.cs.colorado.edu/vm/.)
 
 If you're taking other CS courses, you may already have it. Once the VM is loaded and running in [VirtualBox](https://www.virtualbox.org/), this command will install the stash of tools we may use in this course:
 
@@ -20,6 +20,14 @@ sudo apt-get update && sudo apt-get install cu-cs-csci-4830-geo -y
 ```
 
 Alternatively, if you use CSEL machines, this package will already be installed.
+
+If you have problems with the VM environment, you can get help from Andy Saylor:
+
+  * Monday, 01/12/15 @ 2 PM in ECCS 112 (CSEL South)
+  * Tuesday, 01/13/15 @ 11 AM in ECCS 112 (CSEL South)
+  * Wednesday, 01/14/15 @ 2 PM in ECCS 112 (CSEL South)
+  * Thursday, 01/15/15 @ 11 AM in ECCS 112 (CSEL South)
+  * Friday, 01/16/15 @ 4 PM in ECCS 112 (CSEL South)
 
 ## Git
 
