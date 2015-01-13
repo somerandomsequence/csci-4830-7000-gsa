@@ -26,7 +26,7 @@ There are some important events and deliverables:
   
 ## Inspiration
 
-Not sure what you want to do? As you think about a project you may find [this giant list of free GIS data](http://freegisdata.rtwilson.com/) helpful. The newspaper can provide some inspiration vis a vis interesting current social analysis, and the website [FiveThirtyEight](http://fivethirtyeight.com) sometimes has inspiring data examples (although you have to avoid all the sportsball references). As a last resort I'm happy to offer some project ideas, although it's most helpful if you come to the discussion with a couple directions in mind.
+Not sure what you want to do? As you think about a project you may find [this giant list of free GIS data](http://freegisdata.rtwilson.com/) helpful. The newspaper can provide some inspiration vis a vis interesting current social analysis, and the website [FiveThirtyEight](http://fivethirtyeight.com) sometimes has inspiring data examples (although you have to avoid all the sportsball references) and the [Nasa Earth Observatory](http://earthobservatory.nasa.gov/Features/?eocn=topnav&eoci=features) has tons of fantastic remote sensing examples. As a last resort I'm happy to offer some project ideas, although it's most helpful if you come to the discussion with a couple directions in mind.
 
 ## Pace and General Expectations
 

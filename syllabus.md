@@ -47,6 +47,15 @@ to do ;)---caveat emptor).
 
 Access to a computer will be required for course assignments and projects. Programmatic tasks will be most approachable on a Unix or Unix-similar computer. The CS department has ample computing resources, particularly in the CSEL, which you are encouraged to make use of. If you are concerned about access to computing resources capable of completing the assignments, please let me know.
 
+#Textbook
+
+There is no required text for this class. There *are* two books, available for free as e-books in the library which may be helpful. These are:
+
+ * [Learning Geospatial Analysis with Python](http://libraries.colorado.edu/record=b7678125~S3)
+ * [Open Source GIS: A GRASS GIS Approach](http://libraries.colorado.edu/record=b5495267~S3)
+ 
+All other readings are provided for download via the course website.
+ 
 #Grades
 
 Grading will be based upon attendance and participation, quality of execution on assignments, and
