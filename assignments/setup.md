@@ -37,7 +37,7 @@ You'll submit your work using the CSCI git server. Create an account here, if yo
 
 Once you're in, create a new **private** project called **csci-4830-7000** (or similar, e.g., csci-4830-7000-geo, if you already have a project called that). 
 
-Next, share it with me (Caleb Phillips) by going to Settings > Members > New Project Member. Guest (read-only) membership will be plenty for me.
+Next, share it with me (Caleb Phillips) by going to Settings > Members > New Project Member. Reporter (read-only) membership will be plenty for me.
 
 Once you've created the repository online, check it out to your computer using the instructions on the main project page. Within the project folder, you'll have a set of directories like so:
 

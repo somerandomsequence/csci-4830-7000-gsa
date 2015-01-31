@@ -49,7 +49,7 @@ Let's write a script to calculate the carrying by reading in the shapefile using
 
 {% highlight bash %}
 sudo pip install shapely
-sudo pip install julia
+sudo pip install fiona
 {% endhighlight %}
 
 On a machine you don't have root access to, you can use the "--user" option to pip and drop the sudo.
