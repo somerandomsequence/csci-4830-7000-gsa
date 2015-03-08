@@ -116,7 +116,7 @@ Next, we can read in some geographic information about the ZCTA regions from the
 zip <- read.table("zipinfo.tsv",header=TRUE)
 
 # Determine lat/lon/size for zips
-census$lon <- sapply(census$GEO.id2,function(x){ zip[zip$GEOID == x,"INTPTLON"] })
+census$lat <- sapply(census$GEO.id2,function(x){ zip[zip$GEOID == x,"INTPTLAT"] })
 census$lon <- sapply(census$GEO.id2,function(x){ zip[zip$GEOID == x,"INTPTLONG"] })
 census$sqmi <- sapply(census$GEO.id2,function(x){ zip[zip$GEOID == x,"ALAND_SQMI"] })
 
@@ -127,10 +127,10 @@ library(ggmap)
 pdf("maps.pdf")
 
 usa <- qmap("united states",zoom=4)
-usa + geom_point(aes(x=lon,y=lat,color=nhate,size=nhate),data=hatecensus)
+usa + geom_point(aes(x=lon,y=lat,color=nhate,size=nhate),data=census)
 
 colorado <- qmap("colorado",zoom=7)
-colorado + geom_point(aes(x=lon,y=lat,color=nhate,size=nhate),data=hatecensus)
+colorado + geom_point(aes(x=lon,y=lat,color=nhate,size=nhate),data=census)
 
 dev.off() # for pdf
 {% endhighlight %}
