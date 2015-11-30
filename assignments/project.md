@@ -38,7 +38,7 @@ If you feel you are having problems with your project or may not be able to comp
 
 You'll use [LaTeX](http://www.latex-project.org/) to typeset and format your document. The following archive contains an template (example.tex) and starting Makefile:
 
-  * [project.zip](/a/project.zip)
+  * [project.zip](/assignments/project.zip)
 
 To compile the LaTeX file into a PDF, you can simply:
 

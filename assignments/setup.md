@@ -21,13 +21,9 @@ sudo apt-get update && sudo apt-get install cu-cs-csci-4830-geo -y
 
 Alternatively, if you use CSEL machines, this package will already be installed.
 
-If you have problems with the VM environment, you can get help from Andy Saylor:
+If you have problems with the VM environment, you can get help from Andy Saylor (times TBD).
 
-  * Monday, 01/12/15 @ 2 PM in ECCS 112 (CSEL South)
-  * Tuesday, 01/13/15 @ 11 AM in ECCS 112 (CSEL South)
-  * Wednesday, 01/14/15 @ 2 PM in ECCS 112 (CSEL South)
-  * Thursday, 01/15/15 @ 11 AM in ECCS 112 (CSEL South)
-  * Friday, 01/16/15 @ 4 PM in ECCS 112 (CSEL South)
+If you feel that using the VM is too slow or onerous and would rather maintain your own copies of the software (e.g., install them directly on your host operating system), you are welcome to do so. However, in that scenario, you will be on your own when it comes to any issues that arise (dependencies, etc.).
 
 ## Git
 
@@ -35,20 +31,29 @@ You'll submit your work using the CSCI git server. Create an account here, if yo
 
 [https://git.cs.colorado.edu/](https://git.cs.colorado.edu/users/sign_in)
 
-Once you're in, create a new **private** project called **csci-4830-7000** (or similar, e.g., csci-4830-7000-geo, if you already have a project called that). 
+Once you're in, go to this template repository:
 
-Next, share it with me (Caleb Phillips) by going to Settings > Members > New Project Member. Reporter (read-only) membership will be plenty for me.
+[https://git.cs.colorado.edu/phillict/csci-gsa-2016](https://git.cs.colorado.edu/phillict/csci-gsa-2016)
 
-Once you've created the repository online, check it out to your computer using the instructions on the main project page. Within the project folder, you'll have a set of directories like so:
+Create a private fork of this repository that is shared with just me and the grader:
 
-  * assignment1
-  * assignment2
-  * ...
-  * reading1
-  * reading2
-  * ...
-  * project
-  
+  * Click the fork button (to the left of SSH)
+  * After forking, go to Settings in the menu on the left
+  * Change the Visibility Level to "Private", click "Save" at the bottom
+  * Go back to the main project page
+  * Go to Members in the menu on the left, click Add Members
+  * Add myself (phillict) and the Josh (jofe3744) as Guest members
+
+Once you've created the repository online, check it out to your computer, e.g.:
+
+```
+git clone git@git.cs.colorado.edu:youruid/csci-gsa-2016.git
+```
+
+Replace youruid in the string above with your CU identikey username.
+
+There are instructions in the README of the template. In sum, you can create a skeleton directory structure by untaring dirs.tar.
+
 When it comes time to do grading on readings and assignments I'll expect to find your submission in the corresponding folder. You'll submit your work by doing a standard:
 
 ```
@@ -61,7 +66,7 @@ To commit all outstanding changes to your local branch. And:
 git push
 ```
 
-To submit them upstream to the git server so that I can see and grade them. 
+To submit them upstream to the git server (i.e., push your changes up to the online copy of your repository) so that I can see and grade them. 
 
 ## Other Tools
 
@@ -90,8 +95,11 @@ Whether you're using a CSEL machine (where tools should be pre-installed), the V
       * Try: ```R --version``` 
     * [Python](https://www.python.org/) >= 2.7
       * Try: ```python --version```
+      * May be easiest to install the [Anaconda distribution](https://www.continuum.io/downloads)
   * **Misc**
     * [Git](http://git-scm.com/) >= 1.9
       * Try: ```git --version```
-      
+    * [R Studio Desktop](https://www.rstudio.com/) 
+    * [iPython Notebooks](http://ipython.org/)
+    
 Choosing to install everything yourself, on your own machine or VM is definitely an option, but it is at your own risk. If you run into difficulties (OSX can be a particular headache at times), you should punt to the consistent environment of the standard VM or CSEL machines.
