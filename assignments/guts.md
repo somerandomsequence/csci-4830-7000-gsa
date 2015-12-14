@@ -94,13 +94,13 @@ Next, compute either Moran's I or Geary's C on the data. Make sure you analyze d
 
 Q2: Is the diversity data spatially autocorrelated? How does the test you've done support this (or not)?
 
- to calculate the [Tanimoto Distance Coefficient](https://en.wikipedia.org/wiki/Jaccard_index#Tanimoto.27s_definitions_of_similarity_and_distance) between each pair of samples. This should convert the sample's OTU counts to a boolean (true if count is greater than zero, false otherwise). It can return None if either the numerator or denominator in the Tanimoto similarity calculation is zero.
-
 Now, modify the python code above to calculate the difference between each *pair* of samples. The output should be an N x N matrix, where N is the number of samples in the metadata (if you don't limit your output to those samples in the metadata, the computation will take a very long time!). For the operating definition of distance, we'll use the [Tanimoto Distance Coefficient](https://en.wikipedia.org/wiki/Jaccard_index#Tanimoto.27s_definitions_of_similarity_and_distance).
 
-So that it completes in a reasonable amount of time, you'll need to use some care with how you compute the tanimoto coefficient. Here are two functions that will help---one converts an OTU vector of counts to a bit string stored in a long integer, the other calculates the Tanimoto distance on two such bit strings. Even with this optimization, the computation may take an hour or more to run on your machine.
+So that it completes in a reasonable amount of time, you'll need to use some care with how you compute the Tanimoto coefficient. Here are two functions that will help---one converts an OTU vector of counts to a bit string stored in a long integer, the other calculates the Tanimoto distance on two such bit strings. Even with this optimization, the computation may take an hour or more to run on your machine.
 
 {% highlight python %}
+import math
+
 def otus_to_bits(v):
   return reduce(lambda x,y: x|y,map(lambda (i,x): 1<<i if x > 0 else 0,enumerate(v)))
 
@@ -119,7 +119,7 @@ Tip: you can easily see all the metadata fields with:
 head -n 1 AG.txt
 {% endhighlight %}
 
-Use R, Python or a method of your choice to cluster the data. If you use R, the CLARA and PAM methods are both good choices and can be found in the [cluster package](https://cran.r-project.org/web/packages/cluster/cluster.pdf]. CLARA will be faster than PAM due to the way it clusters random sub-samples. Both methods can automatically determine the optimal number of clusters. For python, [scikit learn](http://scikit-learn.org/stable/modules/clustering.html) has excellent clustering support.
+Use R, Python or a method of your choice to cluster the data. If you use R, the CLARA and PAM methods are both good choices and can be found in the [cluster package](https://cran.r-project.org/web/packages/cluster/cluster.pdf). CLARA will be faster than PAM due to the way it clusters random sub-samples. Both methods can automatically determine the optimal number of clusters. For python, [scikit learn](http://scikit-learn.org/stable/modules/clustering.html) has excellent clustering support.
 
 Q4: How many clusters seem ideal for this data? 
 
