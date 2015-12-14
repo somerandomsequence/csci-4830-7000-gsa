@@ -113,4 +113,8 @@ Next, use the classified rasters (perhaps converted to vector files first) to co
 
 **Q3**: What is the rate of growth of Dubai in this time period? Provide a plot of percentage impervious versus time.
 
-**EC1**: Perform a similar analysis for a different city, or with different satellite imagery and compare the methods and results.
+## Extra Credit
+
+**EC1**: Perform a similar analysis for a different city (e.g., Las Vegas or Phoenix), or with different satellite imagery and compare the methods and results.
+
+**EC2**: Download Phoenix orthoimagery (for just one year, with minimal cloud cover). Use the same method to train a classifier for swimming pools. How many swimming pools are in Pheonix? What is their combined surface area? Assuming an average depth of 5 feet, what is their total volume? (By way of comparison, Lake Mead currently stores 9,661,950 acre-ft of water. Empirical evaporation rates are [given here](http://www.wrcc.dri.edu/htmlfiles/westevap.final.html))

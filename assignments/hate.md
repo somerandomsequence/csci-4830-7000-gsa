@@ -13,6 +13,8 @@ system](https://www.census.gov/geo/maps-data/data/tiger.html). All data is for 2
 format with minimal post-processing after retrieval. The functional geospatial unit here 
 is a zipcode (ZCTA - "zip code tabulation area" in US Census parlance).
 
+For this assignment you will likely turn in either an Rmd ([R Markdown](http://rmarkdown.rstudio.com/)) file and compiled PDF or an iPython notebook. If you choose to use a different environment (e.g., Julia), make sure that you commit everything needed to run and understand what you've done.
+
 ## Data
 
 Download the data: [hate.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqcWxPelJYYUxsT0E/view?usp=sharing) (51 MB)
@@ -44,8 +46,7 @@ To get you started, we'll walk through some basic data processing and analysis w
 don't need to use R to complete this assignment, but it's certainly a good candidate.
 Your task is to extend the analysis to include economic and education
 variables. Doing so will involve writing routines to load/format/plot/inspect that 
-additional data. There are some questions below. Please answer these questions to the 
-best of your ability and submit your completed (1) code (plain text), (2) results write-up (plain text or PDF), and (3) plots (single PDF, not embedded in the write-up) via git.
+additional data. 
 
 First, let's read in and prepare the SPLC data:
 
@@ -144,5 +145,7 @@ Integrate the economic data from econ2011.csv and education data from edu2011.cs
 **Q5:** Are there any interesting correlations between economic factors and hate group prevalence? Compute some statistics and/or make a plot to demonstrate what you find.
 
 **Q6:** Are there any interesting correlations between education attainment and hate group prevalence? Compute some statistics and/or make a plot to demonstrate what you find.
+
+## Extra Credit
 
 **EC1:** What methods might you employ to determine which are the most important factors (i.e., economic, education, demographic) for predicting the presence/absence or number of groups in a given zipcode? Using those methods, what can you find?

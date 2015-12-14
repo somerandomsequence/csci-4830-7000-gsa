@@ -5,7 +5,7 @@ permalink: /syllabus/
 ---
 **Catalog Number:** CSCI 4830/7000
 
-**Time/Place:** Tuesdays & Thursdays 6:30p-7:45p in ECCR 1B08
+**Time/Place:** Tuesdays & Thursdays 6:30p-7:45p in ECCR 118
 
 **Webpage:** [gsa.smallwhitecube.com](http://gsa.smallwhitecube.com)
 
@@ -62,8 +62,8 @@ Grading will be based upon attendance and participation, quality of execution on
 final project outcomes. A detailed rubric will be developed throughout the course, but a general breakdown is as follows:
 
   * Attendance: 10%
-  * Readings: 20%
-  * Assignments: 30%
+  * Readings: 10%
+  * Assignments: 40%
   * Final Project: 40%
   
 Students who need a particular grade for their degree requirements are encouraged to inform the instructor so that extra-credit assignments might be assessed to bring a grade above threshold. There is absolutely no reason to get a grade below the one you desire. Note that that extra-credit work may be fairly complex or laborious as compared to the required course work. Because of that, I don't advise relying on extra-credit work to bolster your grade, unless needed, or you're simply interested in doing additional work. Students who are auditing the course are similarly encourage to discuss goals with the instructor.

@@ -9,6 +9,8 @@ This assignment explores the concept of local/regional carrying capacity, i.e., 
 many animals (people, in this case) can be supported by the land containing a given population center. We'll focus on Hawaii since it is an isolated state where any food not 
 grown locally must be delivered by freighter. Land-cover classification (NLCD) data from 2001 will be the basis of our analysis.
 
+For this assignment you'll need to implement your solution using an [iPython Notebook](http://ipython.org/notebook.html). Make sure to commit your .pynb file along with your analysis.md when you submit your assignment via git.
+
 ## Data
 
 Download the data: [capacity.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqTmt6dGRaR1Frb3c/view?usp=sharing) (2 MB)
@@ -19,6 +21,7 @@ Download the data: [capacity.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqT
 ## References
 
   * [Shapely](https://pypi.python.org/pypi/Shapely) and [Fiona](ttp://www.macwright.org/2012/10/31/gis-with-python-shapely-fiona.html)
+  * [iPython Notebooks](http://ipython.org/notebook.html)
 
 ## Instructions
 
@@ -57,8 +60,6 @@ On a machine you don't have root access to, you can use the "--user" option to p
 Here's the start of a script that uses julia and shapely to read in a shapefile and loop over the shapes:
 
 {% highlight Python %}
-#!/usr/bin/env python
-
 from shapely.geometry import mapping, shape
 from fiona import collection
 
@@ -71,11 +72,13 @@ with collection("land_cover.shp","r") as input:
     print s
 {% endhighlight %}
 
-Extend this script to calculate the combined area for each arable class you identified. Then using Mcal/m^2 numbers from Table 2 of the Peters paper, and your assumed food system plan calculate total productivity.
+Extend this script in an iPython notebook to calculate the combined area for each arable class you identified. Then using Mcal/m^2 numbers from Table 2 of the Peters paper, and your assumed food system plan calculate total productivity. If your numbers seem way off, remember that there are 1,000,000 m^2 in 1 km^2 (this conversion is unintuitive and sometimes gets people).
 
-**Q6** Assuming a Mcal/acre model for productivity for each of these categories based on your idealized food system, what is the total potential productivity in calories for Hawaii? 
+**Q6:** Assuming a Mcal/acre model for productivity for each of these categories based on your idealized food system, what is the total potential productivity in calories for Hawaii? 
 
-**Q7** How much does this fall short of the presumed caloric requirements of this region (use population data for the same year as the LCDB data). What is the carrying capacity?
+**Q7:** How much does this fall short of the presumed caloric requirements of this region (use population data for the same year as the LCDB data). What is the carrying capacity?
+
+## Extra Credit
 
 **EC1:** Download the NLCD 2011 data for the contiguous United States [here](http://www.mrlc.gov/nlcd11_data.php). Use this data to make a carrying capacity estimate for the entire United States. Optionally, extend your analysis to compare the 50 contiguous states in their ability to self-support their populations. Discuss your findings.
 

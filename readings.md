@@ -10,4 +10,5 @@ For each reading, you will have one week to read the papers assigned and prepare
 
 Each discussion period will have 1-2 students designated to lead the discussion. Graduate students are responsible for extending the discussion by finding and describing an additional paper of some relevance to the topic or discussion. That additional paper should also be mentioned with a citation in their write-up. Over the duration of the course, each student will be responsible for leading the discussion at least once. When preparing to lead the discussion expect to do a deeper read of the paper, prepare some notes or visuals describing the methods, and a few discussion questions.
 
-<iframe src="https://docs.google.com/spreadsheets/d/17OxNrSSJR7_buoNWuje8L001-Hxlllh30i-eWydhckI/pubhtml?gid=1699312440&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600"></iframe>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1ifPvML4umRh7YCZ4g2Er_fC_trMxm0m-859kfQm1fko/pubhtml?gid=1699312440&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600"></iframe>
