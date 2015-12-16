@@ -109,7 +109,7 @@ def tanimoto(v1,v2):
   return None if ts == 0 else -1*math.log(ts,2)
 {% endhighlight %}
 
-The final bit of this assignment is a cluster-analysis. We want to cluster the samples using the distance matrix and see if cluster membership seems to be correlated with metadata.
+The final bit of this assignment is a cluster-analysis. We want to cluster the samples using the distance matrix and see if cluster membership seems to be correlated with metadata. So that you can complete the cluster analysis in a reasonable amount of time, take the data from a subset of 500 samples selected from the same body site (your choice).
 
 Q3: Are there any metadata that you expect will be correlated with how the samples cluster using the Tanimoto distance?
 
@@ -123,7 +123,7 @@ Use R, Python or a method of your choice to cluster the data. If you use R, the 
 
 Q4: How many clusters seem ideal for this data? 
 
-Q5: Do you see any clear correlations between the outcome of clustering and metadata (e.g., site, age, sex, diet, etc.)? 
+Q5: Do you see any clear correlations between the outcome of clustering and metadata (e.g., site, age, sex, diet, etc.)? Imagine you were reporting the initial results of a contracted cluster analysis to a client. What would you tell them?
 
 ## Extra Credit
 
