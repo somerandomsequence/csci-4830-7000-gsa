@@ -13,9 +13,9 @@ Go to the US Census Bureau American Fact Finder to download data from the US Cen
 
 [US Census Advanced Data Search](http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t)
 
-Use the Geography selector to put in your current address. If you live on campus, use an address for a place you lived previously.
+Use the Geography selector to put in your current address. If you live on campus, use an address for a place you lived previously. If you live on campus now and previously lived in a different country, you can either use equivalent data for that country (if available), or pick an address arbitrarily in a city you're intrested in.
 
-You should see that data is available at a number of resolutions. Add these geographies:
+Using the tool, you should see that data is available at a number of resolutions. Add these geographies:
 
   * State
   * County

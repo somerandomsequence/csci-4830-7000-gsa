@@ -11,32 +11,38 @@ demographic data. The data on hate groups was provided by the [Southern Poverty 
 Center (SPLC)](http://www.splcenter.org/), a non-profit civil rights organization in Montgomery, Alabama. The remainder of the data was obtained via the [US Census TIGER data
 system](https://www.census.gov/geo/maps-data/data/tiger.html). All data is for 2010/2011 and is in CSV (comma separated) or TSV (tab separated)
 format with minimal post-processing after retrieval. The functional geospatial unit here 
-is a zipcode (ZCTA - "zip code tabulation area" in US Census parlance).
+is a zipcode (ZCTA - "zip code tabulation area" in US Census parlance). We'll also use [Metropolitan Statistical Areas (MSA)](https://en.wikipedia.org/wiki/Metropolitan_statistical_area) for comparison.
 
 For this assignment you will likely turn in either an Rmd ([R Markdown](http://rmarkdown.rstudio.com/)) file and compiled PDF or an iPython notebook. If you choose to use a different environment (e.g., Julia), make sure that you commit everything needed to run and understand what you've done.
 
 ## Data
 
-Download the data: [hate.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqcWxPelJYYUxsT0E/view?usp=sharing) (51 MB)
+Download the data: [hate.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqN0Jhd0NqZEtBNkE/view?usp=sharing) (52 MB)
 
  * splc2010.csv - SPLC Data
- * census2010.csv - Census Data
- * census2010meta.csv - Column Descriptions
- * census2010info.txt - Additional info
- * econ2011.csv - Economic Data
- * econ2011meta.csv - Column Descriptions
- * econ2011info.txt - Additional Info
- * edu2011.csv - Education Data
- * edu2011meta.csv - Column Descriptions
- * edu2011info.txt - Additional Info
+ * 2010 Census data & metadata
+   * census2010.csv - Census Data
+   * census2010meta.csv - Column Descriptions
+   * census2010info.txt - Additional info
+   * census2010*_msa.csv - Same data as above for MSAs
+ * 2011 American Community Survey (ACS) data and meta data
+   * econ2011.csv - Economic Data
+   * econ2011meta.csv - Column Descriptions
+   * econ2011info.txt - Additional Info
+   * edu2011.csv - Education Data
+   * edu2011meta.csv - Column Descriptions
+   * edu2011info.txt - Additional Info
  * zipinfo.tsv - Census "Gazette" with additional geo-data on ZCTAs
- 
+ * zcta_county.csv - Mapping between ZTCAs and US Counties
+ * zcta_msa.csv - Mapping between ZCTAs and MSAs
+
 ## References
 
  * [R Language](http://www.r-project.org/) and [R Package System (CRAN)](http://cran.rstudio.com/)
  * [GGPlot2](http://ggplot2.org/) and [GGMap](http://cran.r-project.org/web/packages/ggmap/ggmap.pdf)
- * [SPLC Hate Map](http://www.splcenter.org/get-informed/hate-map)
+ * [SPLC Hate Map](http://www.splcenter.org/hate-map)
  * [NYT 2010 Census Explorer](http://projects.nytimes.com/census/2010/explorer)
+ * [Stop and Frisk: Spatial Analyis of Racial Discrepancies](http://www.r-bloggers.com/stop-and-frisk-spatial-analysis-of-racial-discrepancies/)
 
 ## Instructions
 
@@ -145,6 +151,23 @@ Integrate the economic data from econ2011.csv and education data from edu2011.cs
 **Q5:** Are there any interesting correlations between economic factors and hate group prevalence? Compute some statistics and/or make a plot to demonstrate what you find.
 
 **Q6:** Are there any interesting correlations between education attainment and hate group prevalence? Compute some statistics and/or make a plot to demonstrate what you find.
+
+Here's some code to load in census statistics for [Metropolitican Statistical Areas (MSAs)](https://en.wikipedia.org/wiki/Metropolitan_statistical_area):
+
+{% highlight r %}
+msa <- read.csv('zcta_msa.csv',header=T)
+census.msa <- read.csv('census2010_msa.csv',header=TRUE)
+msa <- merge(msa,census.msa,by.x="CBSA",by.y="GEO.id2")
+
+msa$nhate <- sapply(msa$ZCTA5,function(x){ sum(hate$nzip == x) })
+msa$pctwhite <- as.numeric(as.character(msa$HD02_S078))
+msa$pctmale <- as.numeric(as.character(msa$HD02_S026))
+msa$population <- as.numeric(as.character(msa$HD01_S001))
+msa$hate.per.person <- msa$nhate/msa$population
+msa$hate.per.area <- msa$nhate/msa$MAREALAND
+{% endhighlight %}
+
+**Q7:** Try the analyses you did for Q1 - Q3 with the MSA geography. Do you see any differences in the outcome using this (larger) geography? If so, what's different?
 
 ## Extra Credit
 

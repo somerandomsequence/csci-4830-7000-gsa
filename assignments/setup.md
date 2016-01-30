@@ -42,7 +42,7 @@ Create a private fork of this repository that is shared with just me and the gra
   * Change the Visibility Level to "Private", click "Save" at the bottom
   * Go back to the main project page
   * Go to Members in the menu on the left, click Add Members
-  * Add myself (phillict) and the Josh (jofe3744) as Guest members
+  * Add myself (phillict) and the Josh (jofe3744) as [Reporter](https://git.cs.colorado.edu/help/permissions/permissions) members
 
 Once you've created the repository online, check it out to your computer, e.g.:
 
