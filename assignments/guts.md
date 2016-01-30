@@ -88,11 +88,11 @@ ggmap(usa) + geom_point(aes(x=lon,y=lat,color=nz),data=diversity)
 
 You can also make a choropleth map if you prefer.
 
-Q1: How is the data distributed around the USA? Describe spatial biases and the dispersion process.
+**Q1:** How is the data distributed around the USA? Describe spatial biases and the dispersion process.
 
 Next, compute either Moran's I or Geary's C on the data. Make sure you analyze data from different body sites separately (i.e., skin v.s. fecal).
 
-Q2: Is the diversity data spatially autocorrelated? How does the test you've done support this (or not)?
+**Q2:** Is the diversity data spatially autocorrelated? How does the test you've done support this (or not)?
 
 Now, modify the python code above to calculate the difference between each *pair* of samples. The output should be an N x N matrix, where N is the number of samples in the metadata (if you don't limit your output to those samples in the metadata, the computation will take a very long time!). For the operating definition of distance, we'll use the [Tanimoto Distance Coefficient](https://en.wikipedia.org/wiki/Jaccard_index#Tanimoto.27s_definitions_of_similarity_and_distance).
 
@@ -111,7 +111,7 @@ def tanimoto(v1,v2):
 
 The final bit of this assignment is a cluster-analysis. We want to cluster the samples using the distance matrix and see if cluster membership seems to be correlated with metadata. So that you can complete the cluster analysis in a reasonable amount of time, take the data from a subset of 500 samples selected from the same body site (your choice).
 
-Q3: Are there any metadata that you expect will be correlated with how the samples cluster using the Tanimoto distance?
+**Q3:** Are there any metadata that you expect will be correlated with how the samples cluster using the Tanimoto distance?
 
 Tip: you can easily see all the metadata fields with:
 
@@ -121,9 +121,9 @@ head -n 1 AG.txt
 
 Use R, Python or a method of your choice to cluster the data. If you use R, the CLARA and PAM methods are both good choices and can be found in the [cluster package](https://cran.r-project.org/web/packages/cluster/cluster.pdf). CLARA will be faster than PAM due to the way it clusters random sub-samples. Both methods can automatically determine the optimal number of clusters. For python, [scikit learn](http://scikit-learn.org/stable/modules/clustering.html) has excellent clustering support.
 
-Q4: How many clusters seem ideal for this data? 
+**Q4:** How many clusters seem ideal for this data? Why?
 
-Q5: Do you see any clear correlations between the outcome of clustering and metadata (e.g., site, age, sex, diet, etc.)? Imagine you were reporting the initial results of a contracted cluster analysis to a client. What would you tell them?
+**Q5:** Do you see any clear correlations between the outcome of clustering and metadata (e.g., site, age, sex, diet, etc.)? Imagine you were reporting the initial results of a contracted cluster analysis to a client. What would you tell them?
 
 ## Extra Credit
 
