@@ -20,7 +20,7 @@ Download the data: [capacity.zip](https://drive.google.com/file/d/0B3Vxw_F2RArqT
  
 ## References
 
-  * [Shapely](https://pypi.python.org/pypi/Shapely) and [Fiona](ttp://www.macwright.org/2012/10/31/gis-with-python-shapely-fiona.html)
+  * [Shapely](https://pypi.python.org/pypi/Shapely) and [Fiona](http://www.macwright.org/2012/10/31/gis-with-python-shapely-fiona.html)
   * [iPython Notebooks](http://ipython.org/notebook.html)
 
 ## Instructions
@@ -57,7 +57,7 @@ sudo pip install fiona
 
 On a machine you don't have root access to, you can use the "--user" option to pip and drop the sudo.
 
-Here's the start of a script that uses julia and shapely to read in a shapefile and loop over the shapes:
+Here's the start of a script that uses fiona and shapely to read in a shapefile and loop over the shapes:
 
 {% highlight Python %}
 from shapely.geometry import mapping, shape
@@ -72,7 +72,7 @@ with collection("land_cover.shp","r") as input:
     print s
 {% endhighlight %}
 
-Extend this script in an iPython notebook to calculate the combined area for each arable class you identified. Then using Mcal/m^2 numbers from Table 2 of the Peters paper, and your assumed food system plan calculate total productivity. If your numbers seem way off, remember that there are 1,000,000 m^2 in 1 km^2 (this conversion is unintuitive and sometimes gets people).
+Extend this script in an iPython notebook to calculate the combined area for each arable class you identified. Then using m^2/Mcal numbers from Table 2 of the Peters paper, and your assumed food system plan calculate total productivity. If your numbers seem way off, remember that there are 1,000,000 m^2 in 1 km^2 (this conversion is unintuitive and sometimes gets people).
 
 **Q6:** Assuming a Mcal/acre model for productivity for each of these categories based on your idealized food system, what is the total potential productivity in calories for Hawaii? 
 
